@@ -1,5 +1,9 @@
-import { createBoard } from '@wixc3/react-board';
+import React from 'react';
 import styled from 'styled-components';
+
+export interface StyledComponentsButtonProps {
+    children?: React.ReactNode;
+}
 
 const Button = styled.button`
     background-color: #FAFBFC;
@@ -17,7 +21,7 @@ const Button = styled.button`
     } 
 `;
 
-export default createBoard({
-    name: 'Styled Components',
-    Board: () => <Button>Styled Components Button</Button>
-});
+
+export const StyledComponentsButton: React.FC<StyledComponentsButtonProps> = ({ children }) => (
+    <Button>{children}</Button>
+);
