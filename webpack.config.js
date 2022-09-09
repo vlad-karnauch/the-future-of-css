@@ -17,8 +17,23 @@ module.exports = {
             {
                 test: /\.css$/,
                 exclude: /\.st\.css$/,
-                use: ['style-loader', 'css-loader'],
+                include: /\.module\.css$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                        },
+                    },
+                ],
             },
+            // {
+            //     test: /\.css$/,
+            //     exclude: /\.st\.css$/,
+            //     use: ['style-loader', 'css-loader'],
+            // },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
                 type: 'asset',
