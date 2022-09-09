@@ -5,8 +5,9 @@
     color: #24292E;
     font-size: 1rem;
     padding: 18px;
-    transition: border-color 0.7s;
-    transition: color 0.7s;
+    transition-duration: 0.7s;
+    transition: color, 'border-color';
+    cursor: pointer;
 }
 
 .root:hover {

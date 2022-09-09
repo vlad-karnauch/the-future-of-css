@@ -8,7 +8,9 @@ const Button = styled.button`
     color: #24292E;
     font-size: 1rem;
     padding: 18px;
-    transition border-color 0.7s;
+    transition-propert: color, border-color;
+    transition-duration: 0.7s;
+    cursor: pointer;
     &:hover {
         border-color: #405cf5;
         color: #405cf5;
