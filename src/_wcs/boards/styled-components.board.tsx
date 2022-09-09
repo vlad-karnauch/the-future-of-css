@@ -11,14 +11,11 @@ const Button = styled.button`
     transition border-color 0.7s;
     &:hover {
         border-color: #405cf5;
+        color: #405cf5;
     } 
 `;
 
 export default createBoard({
     name: 'Styled Components',
-    Board: () => (
-        <div>
-            <Button>Styled-Components Button</Button>
-        </div>
-    )
+    Board: () => <Button>Styled Components Button</Button>
 });
