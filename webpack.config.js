@@ -1,10 +1,8 @@
-// @ts-check
-
-import { StylableWebpackPlugin } from '@stylable/webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const { StylableWebpackPlugin } = require('@stylable/webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /** @type {import('webpack').Configuration} */
-export default {
+module.exports = {
     mode: 'development',
     devtool: 'source-map',
     module: {
@@ -17,7 +15,12 @@ export default {
                 },
             },
             {
-                test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)$/,
+                test: /\.css$/,
+                exclude: /\.st\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
                 type: 'asset',
             },
         ],
@@ -27,7 +30,7 @@ export default {
     },
     plugins: [
         new StylableWebpackPlugin({ stcConfig: true }),
-        new HtmlWebpackPlugin({ title: 'Stylable App' }),
+        new HtmlWebpackPlugin({ title: '⭐️ Notes' }),
     ],
     cache: { type: 'filesystem' },
 };
