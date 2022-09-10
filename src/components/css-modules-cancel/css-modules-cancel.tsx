@@ -6,5 +6,5 @@ export interface CSSModulesCancelProps {
 }
 
 export const CSSModulesCancel: React.FC<CSSModulesCancelProps> = ({ children }) => (
-    <button className={styles.cancelButton}>{children}</button>
+    <button className={styles.cancel}>{children}</button>
 );

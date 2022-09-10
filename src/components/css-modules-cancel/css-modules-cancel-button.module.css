@@ -1,9 +1,9 @@
-.cancelButton {
+.cancel {
   composes: button from '../css-modules-button/css-modules-button.module.css';
   color: #ff4742;
 }
 
-.cancelButton:hover {
+.cancel:hover {
   border-color: #ff4742;
   color: #ff4742;
 }
