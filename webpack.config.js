@@ -29,11 +29,11 @@ module.exports = {
                     },
                 ],
             },
-            // {
-            //     test: /\.css$/,
-            //     exclude: /\.st\.css$/,
-            //     use: ['style-loader', 'css-loader'],
-            // },
+            {
+                test: /\.css$/,
+                exclude: /\.st\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
                 type: 'asset',

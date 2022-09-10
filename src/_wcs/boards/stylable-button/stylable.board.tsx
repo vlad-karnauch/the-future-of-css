@@ -3,5 +3,5 @@ import { StylableButton } from '../../../components/stylable-button/stylable-but
 
 export default createBoard({
     name: 'Stylable',
-    Board: () => <StylableButton>Sylable Button</StylableButton>
+    Board: () => <StylableButton>Stylable Button</StylableButton>
 });
