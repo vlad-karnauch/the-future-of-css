@@ -45,7 +45,7 @@ module.exports = {
     },
     plugins: [
         new StylableWebpackPlugin({ stcConfig: true }),
-        new HtmlWebpackPlugin({ title: '⭐️ Notes' }),
+        new HtmlWebpackPlugin({ title: 'The Future of CSS WCS Examples' }),
     ],
     cache: { type: 'filesystem' },
 };

@@ -41,7 +41,3 @@
 .button:hover a {
     color: #405cf5;
 }
-
-.button:icon {
-    /* Produces build time error */        
-}
