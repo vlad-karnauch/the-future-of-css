@@ -3,5 +3,5 @@ import { StyledComponentsButton } from '../../../components/styled-components-bu
 
 export default createBoard({
     name: 'Styled Components',
-    Board: () => <StyledComponentsButton>Styled Components Button</StyledComponentsButton>
+    Board: () => <StyledComponentsButton>Styled Components Button</StyledComponentsButton>,
 });

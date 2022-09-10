@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/react'
+import { jsx, css } from '@emotion/react';
 
 export interface EmotionButtonProps {
     children?: React.ReactNode;
@@ -19,9 +19,8 @@ export const EmotionButton: React.FC<EmotionButtonProps> = ({ children }) => (
             cursor: 'pointer',
             '&:hover': {
                 borderColor: '#405cf5',
-                color: '#405cf5'
-            }
-
+                color: '#405cf5',
+            },
         }}
     >
         {children}

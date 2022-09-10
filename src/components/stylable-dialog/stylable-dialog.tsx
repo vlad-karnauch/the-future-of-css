@@ -1,4 +1,4 @@
-import type Recat from 'react';
+import 'react';
 import { st, classes } from './stylable-dialog.st.css';
 import { StylableButton } from '../stylable-button/stylable-button';
 
@@ -10,7 +10,13 @@ export interface StylableDialogProps {
     button: React.ReactNode;
 }
 
-export const StylableDialog: React.FC<StylableDialogProps> = ({ className = '', img, title, body, button }) => {
+export const StylableDialog: React.FC<StylableDialogProps> = ({
+    className = '',
+    img,
+    title,
+    body,
+    button,
+}) => {
     return (
         <div className={st(classes.root, {}, className)}>
             <img className={classes.img} src={img} />
