@@ -1,4 +1,4 @@
-@st-import StylableDialog, [button] from '../../../components/stylable-dialog/stylable-dialog.st.css'
+@st-import StylableDialog from '../stylable-dialog/stylable-dialog.st.css';
 
 .customDialog {
     -st-extends: StylableDialog;
@@ -10,7 +10,5 @@
 
 .customDialog::button {
     padding: 8px;
-    font-size: 1px; /* 18px */
+    font-size: 18px;
 }
-
-
