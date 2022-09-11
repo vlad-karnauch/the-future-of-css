@@ -18,7 +18,7 @@ export const StylableDialog: React.FC<StylableDialogProps> = ({
     button,
 }) => {
     return (
-        <div className={st(classes.root, {}, className)}>
+        <div className={st(classes.root, className)}>
             <img className={classes.img} src={img} />
             <h1 className={classes.title}>{title}</h1>
             <p className={classes.body}>{body}</p>

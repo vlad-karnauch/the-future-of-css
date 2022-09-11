@@ -19,7 +19,6 @@
 
 .title {
     font-size: 28px;
-    margin-bottom: 0;
 }
 
 .body {
@@ -29,8 +28,6 @@
 
 .button {
     -st-extends: StylableButton;
-    padding: 8px;
-    font-size: 18px;
 }
 
 .button a {
